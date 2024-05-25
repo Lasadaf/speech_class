@@ -71,9 +71,12 @@ scp_file.close()
 stm_file.close()
 ```
 
-export KALDI_ROOT=*расположение папки kaldi*
+Для обучения:
 
+```
+export KALDI_ROOT=*расположение папки kaldi*
 python3 ./run.py
+```
 
 Возможные действия:
 
