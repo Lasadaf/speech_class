@@ -11,8 +11,9 @@ pip install -r ./requirements.txt
 Для предобработки звукового потока необходима библиотека kaldi:
 https://kaldi-asr.org/doc/install.html
 
-Для использования мобильного клиента локально необходим фреймворк Flutter:
-https://docs.flutter.dev/get-started/install/linux/desktop
+Для использования мобильного клиента локально необходим фреймворк Flutter (Android Studio и далее не обязательны):
+https://habr.com/ru/articles/741248/
+
 
 1. Обучение нейронных сетей
 
