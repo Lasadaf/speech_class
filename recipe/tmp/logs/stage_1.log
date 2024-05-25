@@ -1,0 +1,5 @@
+Usage: utils/data/fix_data_dir.sh <data-dir>
+e.g.: utils/data/fix_data_dir.sh data/train
+This script helps ensure that the various files in a data directory
+are correctly sorted and filtered, for example removing utterances
+that have no features (if feats.scp is present)

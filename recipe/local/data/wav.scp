@@ -1,0 +1,7 @@
+FLAC1 ./data/audio/FLAC1.wav
+FLAC2 ./data/audio/FLAC2.wav
+WAV1 ./data/audio/WAV1.wav
+WAV2 ./data/audio/WAV2.wav
+WAV3 ./data/audio/WAV3.wav
+WAV4 ./data/audio/WAV4.wav
+
