@@ -52,7 +52,7 @@ for row in reader:
 
 ...
 
-**X_CSV**.close()
+X_CSV.close()
 
 ...
 
