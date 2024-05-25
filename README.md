@@ -8,7 +8,8 @@
 pip install -r ./requirements.txt
 ```
 
-Для использования мобильного клиента локально необходим фреймворк Flutter.
+Для использования мобильного клиента локально необходим фреймворк Flutter:
+https://docs.flutter.dev/get-started/install/linux/desktop
 
 1. Обучение нейронных сетей
 
