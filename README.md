@@ -39,13 +39,13 @@ conv_audio_dir = os.path.abspath("./audio/converted/") + "/"
 scp_file = open("./input/data.scp", "w")
 stm_file = open("./input/data.stm", "w")
 
-**X_DIR** = os.path.abspath("./audio/**path/to/X**") + "/"
-**X_CSV** = open(**X_DIR** + "**X**.csv", "r")
-reader = csv.DictReader(**X_CSV**)
+X_DIR = os.path.abspath("Путь до папки с .csv") + "/"
+X_CSV = open(X_DIR + "имя .csv файла", "r")
+reader = csv.DictReader(X_CSV)
 for row in reader:
     print("Doing " + row["path"])
     scp_file.write(row["name"] + " " + conv_audio_dir + row["name"].split(".")[0] + ".wav\n")
-    os.system("ffmpeg -y -i " + **X_DIR** + row["path"] + " -vn -ac 1 -ar 16000 " + conv_audio_dir + row["name"].split(".")[0] + ".wav")
+    os.system("ffmpeg -y -i " + X_DIR + row["path"] + " -vn -ac 1 -ar 16000 " + conv_audio_dir + row["name"].split(".")[0] + ".wav")
     with wave.open(conv_audio_dir + row["name"].split(".")[0] + ".wav") as mywav:
         duration_seconds = mywav.getnframes() / mywav.getframerate()
         stm_file.write(row["name"] + " 0 " + row["speaker"] + " 0.00 " + str(duration_seconds) + " <" + row["class"] + "> _\n")
