@@ -8,6 +8,9 @@
 pip install -r ./requirements.txt
 ```
 
+Для предобработки звукового потока необходима библиотека kaldi:
+https://kaldi-asr.org/doc/install.html
+
 Для использования мобильного клиента локально необходим фреймворк Flutter:
 https://docs.flutter.dev/get-started/install/linux/desktop
 
